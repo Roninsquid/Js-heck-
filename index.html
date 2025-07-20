@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HECK Coin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #FF3C38;
+      --accent: #FFD166;
+      --bg: #1C1B23;
+      --text: #F4F4F4;
+      --muted: #999;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    #typewriter {
+      font-size: 1.25rem;
+      color: var(--accent);
+      margin-top: 0.5rem;
+      min-height: 1.5rem;
+    }
+
+    section {
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--accent);
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .cta-button {
+      background: var(--primary);
+      color: var(--accent);
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      background: #E03030;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.25rem; }
+      .cta-button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HECK Coin</h1>
+    <div id="typewriter"></div>
+  </header>
+
+  <section>
+    <p>🦆 <strong>Welcome to HECK</strong><br>
+      The meme coin your grandma warned you about. Forged in pixel fire by Hephaestus Jones, $HECK is a rebellion against rugs, boredom, and centralized BS.
+    </p>
+  </section>
+
+  <section>
+    <h3>WHY HECK?</h3>
+    <ul>
+      <li>✅ Fair Launch</li>
+      <li>🔒 Locked Liquidity</li>
+      <li>💀 Renounced Ownership</li>
+      <li>🦾 Massive Meme Energy</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>TOKENOMICS</h3>
+    <ul>
+      <li>Total Supply: 1,000,000,000 $HECK</li>
+      <li>Buy Tax: 5% (2% Liquidity, 2% Marketing, 1% Burn)</li>
+      <li>Sell Tax: 5%</li>
+      <li>Max Wallet: 2%</li>
+      <li>Max Transaction: 1%</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>HOW TO BUY</h3>
+    <ol>
+      <li>Download MetaMask or Trust Wallet</li>
+      <li>Fund with BNB</li>
+      <li>Go to Moonshot or PancakeSwap</li>
+      <li>Paste the contract (coming soon)</li>
+      <li>Swap & raise some HECK</li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>ROADMAP</h3>
+    <p>
+      <strong>Phase 1:</strong> Token Launch, Socials, Meme Pack, Trending<br>
+      <strong>Phase 2:</strong> NFT Drops, CMC Listings, Hephaestus AI Reels<br>
+      <strong>Phase 3:</strong> DAO, Merch, Meme Game
+    </p>
+  </section>
+
+  <section class="quote">
+    “I didn’t launch $HECK. I hammered it into existence.”<br>– Hephaestus Jones
+  </section>
+
+  <a class="cta-button" href="https://twitter.com/HephaestusHeck" target="_blank">JOIN THE HECKIN’ REBELLION</a>
+
+  <footer>
+    <p>&copy; 2025 HECK Coin. All chaos reserved.</p>
+  </footer>
+
+  <script>
+    const text = "Forged, Not Launched.";
+    let i = 0;
+    const speed = 80;
+    const el = document.getElementById("typewriter");
+    (function type() {
+      if (i < text.length) {
+        el.textContent += text.charAt(i++);
+        setTimeout(type, speed);
+      }
+    })();
+  </script>
+</body>
+</html>
